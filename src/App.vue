@@ -4,9 +4,10 @@
     <div class="row h-100">
       <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
 
-        <div class="pt-4 p-md-0">
+        <div class="pt-4 p-md-0" id="profileText">
           <img src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX8FP10W&_nc_ht=scontent.fabb1-2.fna&oh=2f7412bed0e310054349a1ee1235d14d&oe=6167231B" id="profile_pix" class="rounded-circle p-sm-5 p-2 p-md-5" height="80%" alt="" srcset="">
-          <h4 style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></h4>
+          <h4 class="xxl-sm" style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></h4>
+          <p class="xxl-d" style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></p>
           <p><small>This Is The Official Website Of Miraboi</small></p>
         </div>
         
@@ -19,7 +20,7 @@
 
         <img src="../public/img/right.svg" class="p-2 my-md-5 mt-3" id="arrow" alt="" srcset="">
 
-        <div class="d-flex justify-content-evenly">
+        <div class="d-flex justify-content-evenly p-xxl-5 my-xxl-5" >
 
           <a href="https://twitter.com/miraboi"><i class="fab fa-3x fa-twitter"></i></a>
 
@@ -83,6 +84,9 @@ a{
     font-size: large;
     text-align: left; 
   }
+  .xxl-d{
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -97,6 +101,9 @@ a{
   }
   #content{
     height: 6%
+  }
+  .xxl-d{
+    display: none;
   }
     
 }
@@ -122,6 +129,9 @@ a{
   #content-text{
     font-size: large
   }
+  .xxl-d{
+    display: none;
+  }
 
 }
 
@@ -129,6 +139,9 @@ a{
 @media only screen and (min-width: 992px) {
     #profile_pix{
       width: 80%;
+    }
+    .xxl-d{
+      display: none
     }
 }
 
@@ -151,6 +164,39 @@ a{
     }
     #content-text{
       font-size: x-large
+    }
+    .xxl-d{
+      display: none
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+  #profile_pix{
+        width: 100% !important;
+        height: 100% !important;
+      }
+    #profilebox{
+      height: 100% !important;
+    }
+    #content{
+      height: 100%;
+      font-size: xx-large
+    }
+    #arrow{
+      height: 25%;
+      width: 25%
+    }
+    #content-text{
+      font-size: 3rem
+    }
+    #profileText, #profile_text > h4{
+      font-size: 5rem !important;
+    }
+    .xxl-d{
+      display: inline-block;
+    }
+    .xxl-sm{
+      display: none
     }
 }
 
