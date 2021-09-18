@@ -3,14 +3,20 @@
 
     <div class="row h-100">
       <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
-
-        <div class="pt-4 p-md-0" id="profileText">
-          <img src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX8FP10W&_nc_ht=scontent.fabb1-2.fna&oh=2f7412bed0e310054349a1ee1235d14d&oe=6167231B" id="profile_pix" class="rounded-circle p-xxl-5 p-lg-5 p-md-3 p-xl-5" alt="" srcset="">
-          <h4 class="xxl-sm mt-2 " style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></h4>
-          <p class="xxl-d" style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></p>
-          <p class=""><small>This Is The Official Website Of Miraboi</small></p>
+        <div class="row h-100">
+          <div class="col-12 bg-transparent" id="top-space"></div>
+          <div class="col-12 bg-transparent " id="profile_picture">
+            <img class="rounded-circle " src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX_8uY3G&_nc_ht=scontent.fabb1-2.fna&oh=43e4266854095b02b8b655eb6bc18eb2&oe=616B179B" alt="" srcset="">
+          </div>
+          <div class="col-12 bg-transparent" id="profile_name">
+            <h3 class="xxl-sm mt-2 " style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></h3>
+            <p class="xxl-d" style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></p>
+          </div>
+          <div class="col-12 bg-transparent" id="profile_detail" >
+            <p class="py-2" style="font-family: 'Alike', serif;"><small>This Is The Official Website Of Miraboi</small></p>
+          </div>
+          <div class="col-12"></div>
         </div>
-        
       </div>
 
       <div class="col-12 col-xl-12 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-5 px-3" id="content" >
@@ -68,54 +74,122 @@ a{
 @media only screen and (max-width: 600px)
 and (orientation: portrait)
  {
-  #profile_pix{
-      width: 30% !important;
-      height: 30% !important;
+   #top-space{
+     height: 15%;
+   }
+   #profile_picture{
+     height: 50%;
+   }
+   #profile_picture > img {
+     height: 100%;
+   }
+   #profile_name{
+     height: 10%;
+   }
+   #profile_detail{
+     height: 10%;
+   }
+    #profilebox{
+      height: 31% ;
     }
-  #profilebox{
-    height: 31% !important;
-  }
-  #content{
-    height: 69%
-  }
-  #arrow{
-    height: 40%;
-    width: 30%
-  }
-  #content-text{
-    font-size: large;
-    text-align: left; 
-  }
-  .xxl-d{
-    display: none;
-  }
+    #content{
+      height: 69%
+    }
+    #arrow{
+      height: 40%;
+      width: 30%
+    }
+    #profile_detail > p {
+      font-size: small;
+    }
+    #content-text{
+      font-size: large;
+      text-align: left; 
+    }
+    .xxl-d{
+      display: none;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+and (orientation: landscape)
+ {
+   #top-space{
+     height: 15%;
+   }
+   #profile_picture{
+     height: 50%;
+   }
+   #profile_picture > img {
+     height: 100%;
+   }
+   #profile_name{
+     height: 10%;
+   }
+   #profile_detail{
+     height: 10%;
+   }
+    #profilebox{
+      height: 31% ;
+    }
+    #content{
+      height: 69%
+    }
+    #arrow{
+      height: 40%;
+      width: 30%
+    }
+    #profile_detail > p {
+      font-size: small;
+    }
+    #content-text{
+      font-size: large;
+      text-align: left; 
+    }
+    .xxl-d{
+      display: none;
+    }
+}
+
 @media only screen and (min-width: 600px) 
 and (orientation: landscape)
-{
-  #profile_pix{
-      width: 20% ;
-      height: 20%;
+ {
+   #top-space{
+     height: 15%;
+   }
+   #profile_picture{
+     height: 50%;
+   }
+   #profile_picture > img {
+     height: 100%;
+   }
+   #profile_name{
+     height: 10%;
+   }
+   #profile_detail{
+     height: 10%;
+   }
+    #profilebox{
+      height: 31% ;
     }
-  #profilebox{
-    height: 70%;
-  }
-  #content{
-    height: 69%
-  }
-  #arrow{
-    height: 40%;
-    width: 40%
-  }
-  #content-text{
-    font-size: large;
-    text-align: left; 
-  }
-  .xxl-d{
-    display: none;
-  }
+    #content{
+      height: 69%
+    }
+    #arrow{
+      height: 40%;
+      width: 30%
+    }
+    #profile_detail > p {
+      font-size: small;
+    }
+    #content-text{
+      font-size: large;
+      text-align: left; 
+    }
+    .xxl-d{
+      display: none;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -140,7 +214,7 @@ and (orientation: landscape)
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 320px)
 and (orientation: landscape) {
 
 
@@ -176,7 +250,7 @@ and (orientation: portrait) {
       height: 15% !important;
     }
   #profilebox{
-    height: 50% !important;
+    height: 60% !important;
   }
   #content{
     height: 60%;
