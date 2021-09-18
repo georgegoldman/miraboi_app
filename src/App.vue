@@ -72,7 +72,7 @@ export default {
   },
   methods: {
     redirect() {
-      window.open('info@miraboi.com')
+      window.open("http://info@miraboi.com/")
     }
   }
 }
