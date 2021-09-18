@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-
+    
     <div class="row h-100">
       <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
         <div class="row h-100">
@@ -28,9 +28,11 @@
           For Business & Enquiries Kindly Reach Out To Any Of The Social Media Profile Below.
         </p>
 
-        <img src="../public/img/right.svg" class="p-2 my-md-5 mt-3" id="arrow" alt="" srcset="">
+        <!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
+        <i class="fas fa-caret-down my-5 fa-3x" id="arrow"></i>
 
-        <div class="d-flex justify-content-evenly p-xxl-5 my-xxl-5" >
+
+        <div class="d-flex justify-content-evenly text animated bounce p-xxl-5 my-xxl-5" >
 
           <a href="https://twitter.com/miraboi"><i class="fab fa-3x fa-twitter"></i></a>
 
@@ -40,7 +42,7 @@
 
         </div>
 
-        <h1 class="mt-md-4 my-5 " style="font-family: 'Mrs Saint Delafield', cursive;">Contact Me</h1>
+        <h1 class="mt-md-4 my-5 text animated pulse " style="font-family: 'Mrs Saint Delafield', cursive;">Contact Me</h1>
 
       </div>
     </div>
@@ -62,11 +64,70 @@ html, body {
   height: 100%
 }
 body{
-  background-color: #000;
+  /* background-image: linear-gradient(to right, red, yellow, green); */
+  background-color: black;
   color: white;
+  /* animation: mymove 5s infinite; */
 }
+
+@keyframes mymove {
+  from {background-image: linear-gradient(to right, rgb(77, 33, 33), rgb(49, 49, 11), rgb(15, 70, 15));}
+  to {background-image: linear-gradient(to right, green, red, yellow);}
+}
+
+/* text animation */
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
+@keyframes wobble {
+  0% {transform: translateX(0%);}
+  15% {transform: translateX(-25%) rotate(-5deg);}
+  30% {transform: translateX(20%) rotate(3deg);}
+  45% {transform: translateX(-15%) rotate(-3deg);}
+  60% {transform: translateX(10%) rotate(2deg);}
+  75% {transform: translateX(-5%) rotate(-1deg);}
+  100% {transform: translateX(0%);}
+}
+.wobble {
+  animation-name: wobble;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+/* animate the arrow */
+ #arrow {
+  animation: color-change 0.3s infinite;
+}
+
+@keyframes color-change {
+  0% { color: green; }
+  50% { color: white; }
+  100% {color: green }
+}
+
 #profilebox{
-  background-color: rgb(28, 28, 28);
+  background-color: rgba(28, 28, 28, 0.658);
 }
 
 a{
@@ -98,10 +159,6 @@ and (orientation: portrait)
     }
     #content{
       height: 69%
-    }
-    #arrow{
-      height: 40%;
-      width: 30%
     }
     #profile_detail > p {
       font-size: small;
@@ -140,10 +197,6 @@ and (orientation: landscape)
     #content{
       height: 50%
     }
-    #arrow{
-      height: 40%;
-      width: 30%
-    }
     #profile_detail > p {
       font-size: small;
     }
@@ -181,10 +234,6 @@ and (orientation: landscape)
     }
     #content{
       height: 60%
-    }
-    #arrow{
-      height: 40%;
-      width: 30%
     }
     #profile_detail > p {
       font-size: small;
@@ -250,10 +299,6 @@ and (orientation: portrait)
     #content{
       height: 69%
     }
-    #arrow{
-      height: 40%;
-      width: 30%
-    }
     #profile_detail > p {
       font-size: small;
     }
@@ -292,10 +337,6 @@ and (orientation: landscape)
     #content{
       height: 50%
     }
-    #arrow{
-      height: 40%;
-      width: 30%
-    }
     #profile_detail > p {
       font-size: small;
     }
@@ -331,10 +372,6 @@ and (orientation: landscape)
       height: 100%;
       font-size: xx-large
     }
-    #arrow{
-      height: 25%;
-      width: 25%
-    }
     #content-text{
       font-size: x-large
     }
@@ -356,10 +393,6 @@ and (orientation: landscape)
     #content{
       height: 100%;
       font-size: xx-large
-    }
-    #arrow{
-      height: 25%;
-      width: 25%
     }
     #content-text{
       font-size: 3rem
