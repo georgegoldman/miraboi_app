@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <div v-if='loading'>
-      loading
+      <h1>loading</h1>
     </div>
     <div class="row h-100">
       <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
         <div class="row h-100">
           <div class="col-12 bg-transparent" id="top-space"></div>
-          <div class="col-12 bg-transparent col-sm-3 col-md-12" id="profile_picture">
-            <img class="rounded-circle " src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX_8uY3G&_nc_ht=scontent.fabb1-2.fna&oh=43e4266854095b02b8b655eb6bc18eb2&oe=616B179B" alt="" srcset="">
+          <div class="col-12 bg-transparent col-sm-3 col-md-12" v-lazy-container="{ selector: 'img' }" id="profile_picture">
+            <img class="rounded-circle " data-src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX_8uY3G&_nc_ht=scontent.fabb1-2.fna&oh=43e4266854095b02b8b655eb6bc18eb2&oe=616B179B" alt="" srcset="">
           </div>
           <div class="col-12 col-sm-9 col-md-12">
             <div class="row">
@@ -63,7 +63,7 @@ export default {
     }
   },
   components: {},
-   beforeMount(){
+  beforeCreate(){
     this.loading = true
     window.console.log('loading')
  },
