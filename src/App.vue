@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    
+    <div v-if='loading'>
+      loading
+    </div>
     <div class="row h-100">
       <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
         <div class="row h-100">
@@ -55,7 +57,19 @@
 
 export default {
   name: 'App',
-  components: {}
+  data () {
+    return {
+      loading: false
+    }
+  },
+  components: {},
+   beforeMount(){
+    this.loading = true
+    window.console.log('loading')
+ },
+ mounted(){
+    this.loading = false
+  }
 }
 </script>
 
