@@ -5,10 +5,10 @@
       <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
 
         <div class="pt-4 p-md-0" id="profileText">
-          <img src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX8FP10W&_nc_ht=scontent.fabb1-2.fna&oh=2f7412bed0e310054349a1ee1235d14d&oe=6167231B" id="profile_pix" class="rounded-circle p-sm-5 p-2 p-md-5" height="80%" alt="" srcset="">
-          <h4 class="xxl-sm" style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></h4>
+          <img src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX8FP10W&_nc_ht=scontent.fabb1-2.fna&oh=2f7412bed0e310054349a1ee1235d14d&oe=6167231B" id="profile_pix" class="rounded-circle p-xxl-5 p-lg-5 p-md-3 p-xl-5" alt="" srcset="">
+          <h4 class="xxl-sm mt-2 " style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></h4>
           <p class="xxl-d" style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></p>
-          <p><small>This Is The Official Website Of Miraboi</small></p>
+          <p class=""><small>This Is The Official Website Of Miraboi</small></p>
         </div>
         
       </div>
@@ -65,7 +65,9 @@ a{
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px)
+and (orientation: portrait)
+ {
   #profile_pix{
       width: 30% !important;
       height: 30% !important;
@@ -89,8 +91,37 @@ a{
   }
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) 
+and (orientation: landscape)
+{
+  #profile_pix{
+      width: 20% ;
+      height: 20%;
+    }
+  #profilebox{
+    height: 70%;
+  }
+  #content{
+    height: 69%
+  }
+  #arrow{
+    height: 40%;
+    width: 40%
+  }
+  #content-text{
+    font-size: large;
+    text-align: left; 
+  }
+  .xxl-d{
+    display: none;
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) 
+  and (orientation: portrait)
+{
   #profile_pix{
       width: 40%;
       height: 40%
@@ -109,7 +140,8 @@ a{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px)
+and (orientation: landscape) {
 
 
     #profile_pix{
@@ -117,7 +149,34 @@ a{
       height: 27% !important;
     }
   #profilebox{
-    height: 40% !important;
+    height: 50% !important;
+  }
+  #content{
+    height: 60%;
+  }
+  #arrow{
+    height: 25%;
+    width: 25%
+  }
+  #content-text{
+    font-size: large
+  }
+  .xxl-d{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px)
+and (orientation: portrait) {
+
+
+    #profile_pix{
+      width: 15% !important;
+      height: 15% !important;
+    }
+  #profilebox{
+    height: 50% !important;
   }
   #content{
     height: 60%;
