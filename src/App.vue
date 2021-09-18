@@ -17,7 +17,7 @@
                 <p class="xxl-d" style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></p>
               </div>
               <div class="col-12 bg-transparent" id="profile_detail" >
-                <p class="pb-" style="font-family: 'Alike', serif;"><small>This Is The Official Website Of Miraboi</small></p>
+                <p class="pb-" style="font-family: 'Alike', serif; font-size: medium"><small>Welcome To The Official Website Of Miraboi</small></p>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@
 
         </div>
 
-        <h1 class="mt-md-4 my-5 text animated pulse " style="font-family: 'Mrs Saint Delafield', cursive;">Contact Me</h1>
+        <h1 class="mt-md-4 my-5 text animated pulse" v-on:click="redirect" style="font-family: 'Mrs Saint Delafield', cursive; cursor: pointer">Contact Me</h1>
 
       </div>
     </div>
@@ -69,6 +69,11 @@ export default {
  },
  mounted(){
     this.loading = false
+  },
+  methods: {
+    redirect() {
+      window.open('info@miraboi.com')
+    }
   }
 }
 </script>
