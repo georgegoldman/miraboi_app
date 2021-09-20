@@ -44,7 +44,9 @@
 
         </div>
 
-        <a class="mt-md-4 my-5 text animated pulse" href="mailto:info@miraboi.com"  style="font-family: 'Mrs Saint Delafield', cursive; ">Contact Me</a>
+        <div class="mt-md-4 my-5 animated pulse">
+          <a class="  text  " href="mailto:info@miraboi.com"  style="font-family: 'Mrs Saint Delafield', cursive; "><h1>Contact Me</h1></a>
+        </div>
 
       </div>
     </div>
