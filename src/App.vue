@@ -8,7 +8,7 @@
         <div class="row h-100">
           <div class="col-12 bg-transparent" id="top-space"></div>
           <div class="col-12 bg-transparent col-sm-3 col-md-12" v-lazy-container="{ selector: 'img' }" id="profile_picture">
-            <img class="rounded-circle " data-src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX_8uY3G&_nc_ht=scontent.fabb1-2.fna&oh=43e4266854095b02b8b655eb6bc18eb2&oe=616B179B" alt="" srcset="">
+            <img class="rounded-circle" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" data-src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX_8uY3G&_nc_ht=scontent.fabb1-2.fna&oh=43e4266854095b02b8b655eb6bc18eb2&oe=616B179B" alt="" srcset="">
           </div>
           <div class="col-12 col-sm-9 col-md-12">
             <div class="row">
@@ -44,7 +44,7 @@
 
         </div>
 
-        <h1 class="mt-md-4 my-5 text animated pulse" v-on:click="redirect" style="font-family: 'Mrs Saint Delafield', cursive; cursor: pointer">Contact Me</h1>
+        <h1 class="mt-md-4 my-5 text animated pulse" v-on:click="redirect('info@miraboi.com')" style="font-family: 'Mrs Saint Delafield', cursive; cursor: pointer">Contact Me</h1>
 
       </div>
     </div>
@@ -71,8 +71,8 @@ export default {
     this.loading = false
   },
   methods: {
-    redirect() {
-      window.open("http://info@miraboi.com/")
+    redirect(url) {
+      window.open(""+url)
     }
   }
 }
