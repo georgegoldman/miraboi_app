@@ -44,7 +44,7 @@
 
         </div>
 
-        <h1 class="mt-md-4 my-5 text animated pulse" v-on:click="redirect('info@miraboi.com')" style="font-family: 'Mrs Saint Delafield', cursive; cursor: pointer">Contact Me</h1>
+        <a class="mt-md-4 my-5 text animated pulse" href="mailto:info@miraboi.com"  style="font-family: 'Mrs Saint Delafield', cursive; ">Contact Me</a>
 
       </div>
     </div>
