@@ -3,12 +3,71 @@
     <div v-if='loading'>
       <h1>loading</h1>
     </div>
+    <nav class="navbar fixed-top navbar-light ">
+      <md-toolbar class="bg-transparent">
+        <md-button class="md-icon-button" @click="showNavigation = true">
+          <md-icon>menu</md-icon>
+        </md-button>
+        <!-- <span class="md-title">MIRABOI</span> -->
+
+        <!-- <div class="md-toolbar-section-end">
+          <md-button @click="showSidepanel = true">Favorites</md-button>
+        </div> -->
+      </md-toolbar>
+    </nav>
+    <md-drawer :md-active.sync="showNavigation" md-swipeable>
+      <md-toolbar class="md-transparent" md-elevation="0">
+        <span class="md-title ms-3 ps-5" style="font-family: 'Ruslan Display', cursive;" >MIRABOI</span>
+      </md-toolbar>
+
+      <md-list>
+        <md-list-item>
+          <md-icon>album</md-icon>
+          <span class="md-list-item-text" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" ><h3>Music Handles</h3></span>
+        </md-list-item>
+
+        
+      </md-list>
+    </md-drawer>
+
+    <!-- <md-drawer class="md-right" :md-active.sync="showSidepanel">
+      <md-toolbar class="md-transparent" md-elevation="0">
+        <span class="md-title">Favorites</span>
+      </md-toolbar>
+
+      <md-list>
+        <md-list-item>
+          <span class="md-list-item-text">Abbey Christansen</span>
+
+          <md-button class="md-icon-button md-list-action">
+            <md-icon class="md-primary">chat_bubble</md-icon>
+          </md-button>
+        </md-list-item>
+
+        <md-list-item>
+          <span class="md-list-item-text">Alex Nelson</span>
+
+          <md-button class="md-icon-button md-list-action">
+            <md-icon class="md-primary">chat_bubble</md-icon>
+          </md-button>
+        </md-list-item>
+
+        <md-list-item>
+          <span class="md-list-item-text">Mary Johnson</span>
+
+          <md-button class="md-icon-button md-list-action">
+            <md-icon>chat_bubble</md-icon>
+          </md-button>
+        </md-list-item>
+      </md-list>
+    </md-drawer> -->
+    
     <div class="row h-100">
       <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
         <div class="row h-100">
           <div class="col-12 bg-transparent" id="top-space"></div>
           <div class="col-12 bg-transparent col-sm-3 col-md-12" v-lazy-container="{ selector: 'img' }" id="profile_picture">
-            <img class="rounded-circle" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" data-src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX_8uY3G&_nc_ht=scontent.fabb1-2.fna&oh=43e4266854095b02b8b655eb6bc18eb2&oe=616B179B" alt="" srcset="">
+            <img class="rounded-circle" data-src="https://scontent.fabb1-2.fna.fbcdn.net/v/t1.6435-9/237272282_370510311298178_5353209160180182899_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFfOJ6gBGr-BbkFZyaQPHnRcVO0RwAe5VVxU7RHAB7lVViLELeWZoFPzFAzuYAS9DVpzRYtkHFOo0ynrbE7g3es&_nc_ohc=4utWBdiJEu8AX_8uY3G&_nc_ht=scontent.fabb1-2.fna&oh=43e4266854095b02b8b655eb6bc18eb2&oe=616B179B" alt="" srcset="">
           </div>
           <div class="col-12 col-sm-9 col-md-12">
             <div class="row">
@@ -61,7 +120,9 @@ export default {
   name: 'App',
   data () {
     return {
-      loading: false
+      loading: false,
+      showNavigation: false,
+      showSidepanel: false
     }
   },
   components: {},
@@ -89,6 +150,10 @@ body{
   background-color: black;
   color: white;
   /* animation: mymove 5s infinite; */
+}
+
+.md-elevation-4{
+  box-shadow: none !important;
 }
 
 @keyframes mymove {
