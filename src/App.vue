@@ -17,13 +17,13 @@
     </nav>
     <md-drawer :md-active.sync="showNavigation" md-swipeable>
       <md-toolbar class="md-transparent" md-elevation="0">
-        <span class="md-title ms-3 ps-5" style="font-family: 'Ruslan Display', cursive;" >MIRABOI</span>
+        <span class="md-title ms-3 ps-5 pt-3" style="" >MENU</span>
       </md-toolbar>
 
       <md-list>
         <md-list-item>
           <md-icon>album</md-icon>
-          <span class="md-list-item-text" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" ><h3>Music Handles</h3></span>
+          <span class="md-list-item-text" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" ><h5 style="font-family: 'Limelight', cursive;">Music Profile</h5></span>
         </md-list-item>
 
         
@@ -85,9 +85,9 @@
       </div>
 
       <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-5 px-5" id="content" >
-        <p class="" id="content-text" style="font-family: 'Alike', serif;" >
+        <h3 class="" id="content-text" style="" >
           For Business & Enquiries Kindly Reach Out To Any Of The Social Media Profile Below.
-        </p>
+        </h3>
 
         <!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
         <i class="fas fa-caret-down my-5 fa-3x" id="arrow"></i>
