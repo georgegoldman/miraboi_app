@@ -3,6 +3,8 @@ import VueMasonry from 'vue-masonry-css'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
+// tryyyy
+
 Vue.use(VueMasonry)
 Vue.use(VueRouter)
 
