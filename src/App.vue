@@ -1,145 +1,103 @@
 <template>
   <div id="app">
-    <div v-if='loading'>
-      <h1>loading</h1>
-    </div>
-    <nav class="navbar fixed-top navbar-light ">
-      <md-toolbar class="bg-transparent">
-        <md-button class="md-icon-button" @click="showNavigation = true">
-          <md-icon>menu</md-icon>
-        </md-button>
-        <!-- <span class="md-title">MIRABOI</span> -->
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div> -->
 
-        <!-- <div class="md-toolbar-section-end">
-          <md-button @click="showSidepanel = true">Favorites</md-button>
-        </div> -->
-      </md-toolbar>
-    </nav>
-    <md-drawer :md-active.sync="showNavigation" md-swipeable>
-      <md-toolbar class="md-transparent" md-elevation="0">
-        <span class="md-title ms-3 ps-5 pt-3" style="" >MENU</span>
-      </md-toolbar>
+    <!-- <div class="page-container h-100 ">
+      <md-app md-mode="reveal" class="h-100 row" >
+        <md-app-toolbar class="md-primary" style="height: 5%">
+          <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
+            <md-icon>menu</md-icon>
+          </md-button>
+          <span class="md-title">My Title</span>
+        </md-app-toolbar>
 
-      <md-list>
+        <md-app-drawer :md-active.sync="menuVisible">
+          <md-toolbar class="md-transparent" md-elevation="0">Navigation</md-toolbar>
+
+          <md-list>
+            <md-list-item>
+              <md-icon>move_to_inbox</md-icon>
+              <span class="md-list-item-text"><router-link to="/">Home</router-link></span>
+            </md-list-item>
+
+            <md-list-item>
+              <md-icon>send</md-icon>
+              <span class="md-list-item-text"><router-link to="/about">About</router-link></span>
+            </md-list-item>
+
+            <md-list-item>
+              <md-icon>delete</md-icon>
+              <span class="md-list-item-text">Trash</span>
+            </md-list-item>
+
+            <md-list-item>
+              <md-icon>error</md-icon>
+              <span class="md-list-item-text">Spam</span>
+            </md-list-item>
+          </md-list>
+        </md-app-drawer>
+
+        <md-app-content style="height: 90%">
+            <router-view/>
+        </md-app-content>
+      </md-app>
+    </div> -->
+
+
+    
+    <div class="page-container md-layout-column h-100 row">
+      <nav class="navbar fixed-top navbar-light ">
+        <md-toolbar class="bg-transparent ">
+
+        <div class="md-toolbar-section-end">
+          <md-button @click="showSidepanel = true" class="md-icon-button">
+            <md-icon>menu</md-icon>
+          </md-button>
+        </div>
+      </md-toolbar>
+      </nav>
+
+      <md-drawer class="md-right" :md-active.sync="showSidepanel">
+        <md-toolbar class="md-transparent" md-elevation="0">
+          <span class="md-title">Menu</span>
+        </md-toolbar>
+
+        <md-list>
+          <md-list-item>
+            <md-icon>home</md-icon>
+            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><a href="/">Home</a></h5></span>
+          </md-list-item>
+
+          <md-list-item>
+            <md-icon>work</md-icon>
+            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><a href="about">Clients</a></h5></span>
+          </md-list-item>
+
         <md-list-item>
           <md-icon>album</md-icon>
           <span class="md-list-item-text" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" ><h5 style="font-family: 'Limelight', cursive;">Music Profile</h5></span>
         </md-list-item>
 
-        
-      </md-list>
-    </md-drawer>
+          <!-- <md-list-item>
+            <span class="md-list-item-text">Mary Johnson</span>
 
-    <!-- <md-drawer class="md-right" :md-active.sync="showSidepanel">
-      <md-toolbar class="md-transparent" md-elevation="0">
-        <span class="md-title">Favorites</span>
-      </md-toolbar>
+            <md-button class="md-icon-button md-list-action">
+              <md-icon>chat_bubble</md-icon>
+            </md-button>
+          </md-list-item> -->
+        </md-list>
+      </md-drawer>
 
-      <md-list>
-        <md-list-item>
-          <span class="md-list-item-text">Abbey Christansen</span>
-
-          <md-button class="md-icon-button md-list-action">
-            <md-icon class="md-primary">chat_bubble</md-icon>
-          </md-button>
-        </md-list-item>
-
-        <md-list-item>
-          <span class="md-list-item-text">Alex Nelson</span>
-
-          <md-button class="md-icon-button md-list-action">
-            <md-icon class="md-primary">chat_bubble</md-icon>
-          </md-button>
-        </md-list-item>
-
-        <md-list-item>
-          <span class="md-list-item-text">Mary Johnson</span>
-
-          <md-button class="md-icon-button md-list-action">
-            <md-icon>chat_bubble</md-icon>
-          </md-button>
-        </md-list-item>
-      </md-list>
-    </md-drawer> -->
-    
-    <div class="row h-100">
-      <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
-        <div class="row h-100">
-          <div class="col-12 bg-transparent" id="top-space"></div>
-          <div class="col-12 bg-transparent col-sm-3 col-md-12" v-lazy-container="{ selector: 'img' }" id="profile_picture">
-            <img class="rounded-circle" data-src="https://res.cloudinary.com/ukony/image/upload/v1632488132/MIRABOI/image00001_k603it.jpg" alt="" srcset="">
-          </div>
-          <div class="col-12 col-sm-9 col-md-12">
-            <div class="row">
-              <div class="col-12 bg-transparent" id="profile_name">
-                <h3 class="xxl-sm pt- " style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></h3>
-                <p class="xxl-d" style="font-family: 'Sacramento', cursive;"><b>Miraboi</b></p>
-              </div>
-              <div class="col-12 bg-transparent" id="profile_detail" >
-                <p class="pb-" style="font-family: 'Alike', serif; font-size: medium"><small>Welcome To The Official Website Of Miraboi</small></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12"></div>
-        </div>
-      </div>
-
-      <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-5 px-5" id="content" >
-        <h3 class="" id="content-text" style="" >
-          For Business & Enquiries Kindly Reach Out To Any Of The Social Media Profile Below.
-        </h3>
-
-        <!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
-        <i class="fas fa-caret-down my-5 fa-3x" id="arrow"></i>
-
-
-        <div class="d-flex justify-content-evenly text animated bounce p-xxl-5 my-xxl-5" >
-
-          <a href="https://twitter.com/miraboi"><i class="fab fa-3x fa-twitter"></i></a>
-
-          <a href="https://www.facebook.com/Miraboiofficial"><i class="fab fa-3x fa-facebook"></i></a>
-
-          <a href="https://www.instagram.com/miraboi"><i class="fab fa-3x fa-instagram"></i></a>
-
-        </div>
-
-        <div class="mt-md-4 my-5 animated pulse">
-          <a class="  text  " href="mailto:info@miraboi.com"  style="font-family: 'Mrs Saint Delafield', cursive; "><h1>Email Me</h1></a>
-        </div>
-
-      </div>
+      
+        <router-view/>
+     
     </div>
-    
+
   </div>
 </template>
-
-<script>
-// import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  data () {
-    return {
-      loading: false,
-      showNavigation: false,
-      showSidepanel: false
-    }
-  },
-  components: {},
-  beforeCreate(){
-    this.loading = true
-    window.console.log('loading')
- },
- mounted(){
-    this.loading = false
-  },
-  methods: {
-    redirect(url) {
-      window.open(""+url)
-    }
-  }
-}
-</script>
 
 <style>
 html, body {
@@ -152,32 +110,42 @@ body{
   /* animation: mymove 5s infinite; */
 }
 
+  .page-container {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(#000, .12);
+  }
+
+  .md-drawer {
+    width: 230px;
+    max-width: calc(100vw - 125px);
+  }
+
+  .md-content {
+    padding: 16px;
+  }
+
 .md-elevation-4{
   box-shadow: none !important;
 }
-
 @keyframes mymove {
   from {background-image: linear-gradient(to right, rgb(77, 33, 33), rgb(49, 49, 11), rgb(15, 70, 15));}
   to {background-image: linear-gradient(to right, green, red, yellow);}
 }
-
 /* text animation */
 .animated {
   animation-duration: 2.5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
 }
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
   40% {transform: translateY(-30px);}
   60% {transform: translateY(-15px);}
 }
-
 .bounce {
   animation-name: bounce;
 }
-
 @keyframes wobble {
   0% {transform: translateX(0%);}
   15% {transform: translateX(-25%) rotate(-5deg);}
@@ -190,7 +158,6 @@ body{
 .wobble {
   animation-name: wobble;
 }
-
 @keyframes pulse {
   0% {transform: scale(1);}
   50% {transform: scale(1.1);}
@@ -200,27 +167,22 @@ body{
   animation-name: pulse;
   animation-duration: 1s;
 }
-
 /* animate the arrow */
  #arrow {
   animation: color-change 0.3s infinite;
 }
-
 @keyframes color-change {
   0% { color: green; }
   50% { color: white; }
   100% {color: green }
 }
-
 #profilebox{
   background-color: rgba(28, 28, 28, 0.658);
 }
-
 a{
   color: #fff !important;
-  text-decoration: none
+  text-decoration: none !important;
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
 and (orientation: portrait)
@@ -257,7 +219,6 @@ and (orientation: portrait)
       display: none;
     }
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) 
 and (orientation: landscape)
@@ -294,7 +255,6 @@ and (orientation: landscape)
       display: none;
     }
 }
-
 @media only screen and (min-width: 600px) 
 and (orientation: landscape)
  {
@@ -332,12 +292,9 @@ and (orientation: landscape)
       display: none;
     }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 320px)
 and (orientation: landscape) {
-
-
     #profile_pix{
       width: 27% !important;
       height: 27% !important;
@@ -358,9 +315,7 @@ and (orientation: landscape) {
   .xxl-d{
     display: none;
   }
-
 } */
-
 @media only screen and (min-width: 768px)
 and (orientation: portrait) 
  {
@@ -396,7 +351,6 @@ and (orientation: portrait)
       display: none;
     }
 }
-
 @media only screen and (min-width: 768px)
 and (orientation: landscape) 
  {
@@ -434,7 +388,6 @@ and (orientation: landscape)
       display: none;
     }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #profile_pix{
@@ -444,7 +397,6 @@ and (orientation: landscape)
       display: none
     }
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1024px) {
   #profile_pix{
@@ -464,10 +416,8 @@ and (orientation: landscape)
     .xxl-d{
       display: none
     }
-
     
 }
-
 @media only screen and (min-width: 2560px) {
   #profile_pix{
         width: 100% !important;
@@ -493,7 +443,6 @@ and (orientation: landscape)
       display: none
     }
 }
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -502,3 +451,31 @@ and (orientation: landscape)
   height: 100%;
 }
 </style>
+
+<script>
+// import HelloWorld from './components/HelloWorld.vue'
+export default {
+  name: 'App',
+  data () {
+    return {
+      loading: false,
+      showNavigation: false,
+      showSidepanel: false
+    }
+  },
+  components: {},
+  beforeCreate(){
+    this.loading = true
+    window.console.log('loading')
+ },
+ mounted(){
+    this.loading = false
+  },
+  methods: {
+    redirect(url) {
+      window.open(""+url)
+    }
+  }
+}
+</script>
+
