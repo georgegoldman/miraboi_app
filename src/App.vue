@@ -68,12 +68,12 @@
         <md-list>
           <md-list-item>
             <md-icon>home</md-icon>
-            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><a href="/">Home</a></h5></span>
+            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><md-button to="/">Home</md-button></h5></span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>work</md-icon>
-            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><a href="/about">Clients</a></h5></span>
+            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><md-button to="/about">Clients</md-button></h5></span>
           </md-list-item>
 
         <md-list-item>
