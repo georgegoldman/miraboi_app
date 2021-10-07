@@ -1,7 +1,7 @@
 <template>
   <div class="row h-100 g-0 overflow-auto">
     <div class="col-12 p-3 mt-5">
-                <masonry
+        <masonry
           :cols="{default: 6, 1000: 4, 700: 3, 400: 2}"
           :gutter="{default: '30px', 700: '15px'}"
           >
