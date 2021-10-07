@@ -73,7 +73,7 @@
 
           <md-list-item>
             <md-icon>work</md-icon>
-            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><a href="about">Clients</a></h5></span>
+            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><a href="/about">Clients</a></h5></span>
           </md-list-item>
 
         <md-list-item>
