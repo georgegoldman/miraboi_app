@@ -27,8 +27,8 @@
       </md-list>
     </md-drawer> -->
     
-    <div class="row h-100 overflow-auto">
-      <div class="col-12 col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
+    <div class="row h-100 ">
+      <div class="col-12 overflow-auto col-xl-6 col-sm-12 col-md-12 col-lg-6 col-xxl-6 pt-1 pb-2 p-md-0" id="profilebox">
         <div class="row h-100">
           <div class="col-12 bg-transparent" id="top-space"></div>
           <div class="col-12 bg-transparent col-sm-3 col-md-12" v-lazy-container="{ selector: 'img' }" id="profile_picture">
