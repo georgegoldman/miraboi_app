@@ -37,7 +37,7 @@ export default {
           url: '../img/clients/image00001.jpeg',
           name: 'Dann Visbal',
           description: [
-              {descp: 'Google branding.'},
+              {descp: 'Google Branding.'},
               {descp :'Wikipedia page.'}
             ]
         },
