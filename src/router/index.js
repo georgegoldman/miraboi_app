@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import VueMasonry from 'vue-masonry-css'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 
 // tryyyy
 
 Vue.use(VueMasonry)
-Vue.use(VueRouter)
+// Vue.use(VueRouter)
 
 const routes = [
   {
@@ -24,8 +24,8 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
+const router = createRouter({
+  history: createWebHashHistory(),
   base: process.env.BASE_URL,
   routes
 })
