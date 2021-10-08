@@ -37,31 +37,31 @@ export default {
           url: '../img/clients/image00001.jpeg',
           name: 'Dann Visbal',
           description: [
-              {descp: 'Google branding'},
-              {descp :'Wikipedia page'}
+              {descp: 'Google branding.'},
+              {descp :'Wikipedia page.'}
             ]
         },
         {
           url: '../img/clients/image00002.jpeg',
           name: 'Mery Racauchi',
           description: [
-              {descp: 'Instagram Page verification'},
-              {descp: 'Instagram Page verification'}
+              {descp: 'Instagram Page verification.'},
+              {descp: 'Instagram Page verification.'}
           ]
         },
         {
           url: '../img/clients/image00003.jpeg',
           name: 'Bella Shmurda',
           description: [
-              {descp: 'Facebook Page Verification'}
+              {descp: 'Facebook Page Verification.'}
           ]
         },
         {
           url: '../img/clients/image00004.jpeg',
           name: 'Ks1 Malaika',
           description: [
-              {descp: 'Wikipedia Page'},
-              {descp: 'Google Branding'},
+              {descp: 'Wikipedia Page.'},
+              {descp: 'Google Branding.'},
               {descp: 'Facebook Page Verification.'},
               {descp: 'Instagram Page Verification.'},
           ]
@@ -70,21 +70,21 @@ export default {
           url: '../img/clients/image00005.jpeg',
           name: 'La Mafia',
           description: [
-              {descp: 'Claim Instagram Inactive Username'}
+              {descp: 'Claim Instagram Inactive Username.'}
           ]
         },
         {
           url: '../img/clients/image00006.jpeg',
           name: 'Toto Tamuz',
           description: [
-              {descp: 'Instagram Page Verification'}
+              {descp: 'Instagram Page Verification.'}
           ]
         },
         {
           url: '../img/clients/image00007.jpeg',
           name: 'Alahna Ly',
           description: [
-              {descp: 'Instagram Page Verification'}
+              {descp: 'Instagram Page Verification.'}
           ]
         },
         {
@@ -100,8 +100,9 @@ export default {
           url: '../img/clients/image00009.jpeg',
           name: 'Sean Tizzle',
           description: [
-              {descp: 'Wikipedia Page Instagram Page Verification.'},
-              {descp: 'Page Verification.'}
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+              {descp: 'Facebook Page Verification.'}
           ]
         }
       ],
