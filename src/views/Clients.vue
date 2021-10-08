@@ -106,6 +106,96 @@ export default {
               {descp: 'Instagram Page Verification.'},
 
           ]
+        },
+        {
+          url: '../img/clients/image00010.jpeg',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
+        {
+          url: '../img/clients/image00011.jpeg',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
+        {
+          url: '../img/clients/image00012.jpeg',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
+        {
+          url: '../img/clients/image00013.jpeg',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
+        {
+          url: '../img/clients/image00014.jpeg',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
+        {
+          url: '../img/clients/image00015.png',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
+        {
+          url: '../img/clients/image00016.jpeg',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
+        {
+          url: '../img/clients/image00017.jpeg',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
+        {
+          url: '../img/clients/image00018.jpeg',
+          name: 'Sean Tizzle',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+
+          ]
         }
       ],
     }
