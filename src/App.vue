@@ -13,33 +13,27 @@
           </md-button>
           <span class="md-title">My Title</span>
         </md-app-toolbar>
-
         <md-app-drawer :md-active.sync="menuVisible">
           <md-toolbar class="md-transparent" md-elevation="0">Navigation</md-toolbar>
-
           <md-list>
             <md-list-item>
               <md-icon>move_to_inbox</md-icon>
               <span class="md-list-item-text"><router-link to="/">Home</router-link></span>
             </md-list-item>
-
             <md-list-item>
               <md-icon>send</md-icon>
               <span class="md-list-item-text"><router-link to="/about">About</router-link></span>
             </md-list-item>
-
             <md-list-item>
               <md-icon>delete</md-icon>
               <span class="md-list-item-text">Trash</span>
             </md-list-item>
-
             <md-list-item>
               <md-icon>error</md-icon>
               <span class="md-list-item-text">Spam</span>
             </md-list-item>
           </md-list>
         </md-app-drawer>
-
         <md-app-content style="height: 90%">
             <router-view/>
         </md-app-content>
@@ -73,7 +67,7 @@
 
           <md-list-item>
             <md-icon>work</md-icon>
-            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><router-link to="/about">Clients</router-link></h5></span>
+            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><router-link to="/clients">Clients</router-link></h5></span>
           </md-list-item>
 
         <md-list-item>
@@ -83,7 +77,6 @@
 
           <!-- <md-list-item>
             <span class="md-list-item-text">Mary Johnson</span>
-
             <md-button class="md-icon-button md-list-action">
               <md-icon>chat_bubble</md-icon>
             </md-button>
@@ -92,7 +85,9 @@
       </md-drawer>
 
       
-      <router-view/>
+      <div class="col h-100 " id="client-conent">
+        <router-view/>
+      </div>
      
     </div>
 
@@ -109,22 +104,18 @@ body{
   color: white;
   /* animation: mymove 5s infinite; */
 }
-
   .page-container {
     overflow: hidden;
     position: relative;
     border: 1px solid rgba(#000, .12);
   }
-
   .md-drawer {
     width: 230px;
     max-width: calc(100vw - 125px);
   }
-
   .md-content {
     padding: 16px;
   }
-
 .md-elevation-4{
   box-shadow: none !important;
 }
@@ -450,6 +441,15 @@ and (orientation: landscape)
   text-align: center;
   height: 100%;
 }
+
+#client-conent{
+  overflow: hidden !important;
+   -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#client-conent ::-webkit-scrollbar {
+  display: none;
+}
 </style>
 
 <script>
@@ -478,4 +478,3 @@ export default {
   }
 }
 </script>
-
