@@ -1,6 +1,6 @@
 <template>
   <div class=" row h-100 overflow-auto" >
-    <div class="col-12 py-4 px-3 mt-4">
+    <div class="col-12 py-4 px-3 mt-5">
         <masonry
           :cols="{default: 6, 1000: 4, 700: 3, 400: 2}"
           :gutter="{default: '30px', 700: '15px', 400: '30px'}"
@@ -45,8 +45,9 @@ export default {
           url: '../img/clients/image00002.jpeg',
           name: 'Mery Racauchi',
           description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Facebook Page verification.'},
               {descp: 'Instagram Page verification.'},
-              {descp: 'Instagram Page verification.'}
           ]
         },
         {
@@ -60,8 +61,8 @@ export default {
           url: '../img/clients/image00004.jpeg',
           name: 'Ks1 Malaika',
           description: [
+            {descp: 'Google Branding.'},
               {descp: 'Wikipedia Page.'},
-              {descp: 'Google Branding.'},
               {descp: 'Facebook Page Verification.'},
               {descp: 'Instagram Page Verification.'},
           ]
@@ -91,8 +92,8 @@ export default {
           url: '../img/clients/image00008.jpeg',
           name: 'Kevin Eze',
           description: [
+            {descp: 'Google Branding.'},
               {descp: 'Wikipedia Page.'},
-              {descp: 'Google Branding.'},
               {descp: 'Instagram Page Verification.'}
           ]
         },
@@ -100,9 +101,10 @@ export default {
           url: '../img/clients/image00009.jpeg',
           name: 'Sean Tizzle',
           description: [
+            {descp: 'Google Branding.'},
               {descp: 'Wikipedia Page Verification.'},
               {descp: 'Instagram Page Verification.'},
-              {descp: 'Facebook Page Verification.'}
+
           ]
         }
       ],

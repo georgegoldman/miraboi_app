@@ -46,13 +46,46 @@
       <nav class="navbar fixed-top navbar-light ">
         <md-toolbar class="bg-transparent ">
 
-        <div class="md-toolbar-section-end">
-          <md-button @click="showSidepanel = true" class="md-icon-button">
-            <md-icon>menu</md-icon>
-          </md-button>
-        </div>
+        <md-button class="md-icon-button" @click="showNavigation = true">
+          <md-icon>menu</md-icon>
+        </md-button>
+        <!-- <span class="md-title">My Title</span> -->
+
+        <!-- <div class="md-toolbar-section-end">
+          <md-button @click="showSidepanel = true" class="md-icon-button"> -->
+            <!-- <md-icon>menu</md-icon> -->
+          <!-- </md-button>
+        </div> -->
       </md-toolbar>
       </nav>
+
+      <md-drawer :md-active.sync="showNavigation" md-swipeable>
+      <md-toolbar class="md-transparent" md-elevation="0">
+        <!-- <span class="md-title">My App name</span> -->
+      </md-toolbar>
+
+      <md-list>
+        <md-list-item>
+          <md-icon>home</md-icon>
+          <span class="md-list-item-text"><h5 style="font-family: 'Limelight', cursive;"><router-link to="/" exact>Home</router-link></h5></span>
+        </md-list-item>
+
+        <md-list-item>
+          <md-icon>work</md-icon>
+          <span class="md-list-item-text"><h5 style="font-family: 'Limelight', cursive;"><router-link to="/clients">Clients</router-link></h5></span>
+        </md-list-item>
+
+        <md-list-item>
+          <md-icon>album</md-icon>
+          <span class="md-list-item-text" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" ><h5 style="font-family: 'Limelight', cursive;">Music Profile</h5></span>
+        </md-list-item>
+<!-- 
+        <md-list-item>
+          <md-icon>error</md-icon>
+          <span class="md-list-item-text">Spam</span>
+        </md-list-item> -->
+      </md-list>
+    </md-drawer>
 
       <md-drawer class="md-right" :md-active.sync="showSidepanel">
         <md-toolbar class="md-transparent" md-elevation="0">
@@ -62,17 +95,17 @@
         <md-list>
           <md-list-item>
             <md-icon>home</md-icon>
-            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><router-link to="/" exact>Home</router-link></h5></span>
+            <span class="md-list-item-text" style="cursor: pointer" ></span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>work</md-icon>
-            <span class="md-list-item-text" style="cursor: pointer" ><h5 style="font-family: 'Limelight', cursive;"><router-link to="/clients">Clients</router-link></h5></span>
+            <span class="md-list-item-text" style="cursor: pointer" ></span>
           </md-list-item>
 
         <md-list-item>
           <md-icon>album</md-icon>
-          <span class="md-list-item-text" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" ><h5 style="font-family: 'Limelight', cursive;">Music Profile</h5></span>
+          
         </md-list-item>
 
           <!-- <md-list-item>
