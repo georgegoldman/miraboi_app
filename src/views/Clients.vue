@@ -13,7 +13,11 @@
                 alt="">
                 <p style="font-family: 'Birthstone', cursive;" id="client_name" >{{client.name}}
                 </p>
-                <p id="work_dscp" class="" style="font-family: 'Comfortaa', cursive; ">{{client.description}}</p>
+                <p id="work_dscp" class="" style="font-family: 'Comfortaa', cursive; ">
+                    <ul v-for="work in client.description" :key="work" style="text-align: left" >
+                        <li>{{work.descp}}</li>
+                    </ul>
+                </p>
                 
             </div>
           </div>
@@ -31,48 +35,74 @@ export default {
       items: [
         {
           url: '../img/clients/image00001.jpeg',
-          name: 'Dann Vishal',
-          description: 'Google branding Wikipedia page'
+          name: 'Dann Visbal',
+          description: [
+              {descp: 'Google branding'},
+              {descp :'Wikipedia page'}
+            ]
         },
         {
           url: '../img/clients/image00002.jpeg',
           name: 'Mery Racauchi',
-          description: 'Face page Verification Instagram Page verification'
+          description: [
+              {descp: 'Instagram Page verification'},
+              {descp: 'Instagram Page verification'}
+          ]
         },
         {
           url: '../img/clients/image00003.jpeg',
           name: 'Bella Shmurda',
-          description: 'Facebook Page Verification'
+          description: [
+              {descp: 'Facebook Page Verification'}
+          ]
         },
         {
           url: '../img/clients/image00004.jpeg',
           name: 'Ks1 Malaika',
-          description: 'Wikipedia Page Google Branding Facebook Page Verification Instagram Page Verification'
+          description: [
+              {descp: 'Wikipedia Page'},
+              {descp: 'Google Branding'},
+              {descp: 'Facebook Page Verification.'},
+              {descp: 'Instagram Page Verification.'},
+          ]
         },
         {
           url: '../img/clients/image00005.jpeg',
           name: 'La Mafia',
-          description: 'Claim Instagram Inactive Username'
+          description: [
+              {descp: 'Claim Instagram Inactive Username'}
+          ]
         },
         {
           url: '../img/clients/image00006.jpeg',
-          name: 'Toto Tamug',
-          description: 'Instagram Page Verification'
+          name: 'Toto Tamuz',
+          description: [
+              {descp: 'Instagram Page Verification'}
+          ]
         },
         {
           url: '../img/clients/image00007.jpeg',
-          name: 'Alahua',
-          description: 'Instagram Page Verification'
+          name: 'Alahna Ly',
+          description: [
+              {descp: 'Instagram Page Verification'}
+          ]
         },
         {
           url: '../img/clients/image00008.jpeg',
-          name: 'Kelvin Eze',
-          description: 'Wikipedia Page Google Branding Instagram Page Verification'
+          name: 'Kevin Eze',
+          description: [
+              {descp: 'Wikipedia Page.'},
+              {descp: 'Google Branding.'},
+              {descp: 'Instagram Page Verification.'}
+          ]
         },
         {
           url: '../img/clients/image00009.jpeg',
           name: 'Sean Tizzle',
-          description: 'Wikipedia Page Instagram Page Verification'
+          description: [
+              {descp: 'Wikipedia Page Instagram Page Verification.'},
+              {descp: 'Page Verification.'}
+          ]
         }
       ],
     }
