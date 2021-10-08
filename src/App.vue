@@ -100,7 +100,7 @@ html, body {
 }
 body{
   /* background-image: linear-gradient(to right, red, yellow, green); */
-  background-image: linear-gradient(rgb(78, 78, 25), rgb(51, 63, 51), rgb(77, 18, 18));
+  background-image: linear-gradient(rgb(77, 62, 11) , rgb(20, 75, 92), rgb(90, 37, 20));
   color: white;
   /* animation: mymove 5s infinite; */
 }
