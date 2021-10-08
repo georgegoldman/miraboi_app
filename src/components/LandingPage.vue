@@ -81,7 +81,7 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 export default {
-  name: 'App',
+  name: 'LandingPaage',
   data () {
     return {
       loading: false,
