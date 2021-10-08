@@ -1,14 +1,14 @@
 <template>
   <div class=" row h-100 overflow-auto" >
-    <div class="col-12 p-3 mt-4">
+    <div class="col-12 py-4 px-3 mt-4">
         <masonry
           :cols="{default: 6, 1000: 4, 700: 3, 400: 2}"
-          :gutter="{default: '30px', 700: '15px'}"
+          :gutter="{default: '30px', 700: '15px', 400: '30px'}"
           >
           <div v-for="client in items" :key="client.url" class="row" >
-            <div class="dot my-1 col-3 col-12">
+            <div class="px-1 rounded-3 pt-0 my-1  col-12 border-light border ">
               <img v-lazy="client.url"
-               class=" my-2 "
+               class=" my-1 "
                style="border-radius: 7px;"
                 alt="">
                 <p style="font-family: 'Birthstone', cursive;" id="client_name" >{{client.name}}
