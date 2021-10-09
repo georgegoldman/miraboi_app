@@ -102,98 +102,93 @@ export default {
           name: 'Sean Tizzle',
           description: [
             {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Wikipedia Page '},
               {descp: 'Instagram Page Verification.'},
 
           ]
         },
         {
           url: '../img/clients/image00010.jpeg',
-          name: 'Sean Tizzle',
+          name: 'Mr Real',
           description: [
             {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
-              {descp: 'Instagram Page Verification.'},
-
+              {descp: 'Wikipedia Page '},
           ]
         },
         {
           url: '../img/clients/image00011.jpeg',
-          name: 'Sean Tizzle',
+          name: 'Eniola Badmus',
           description: [
-            {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
               {descp: 'Instagram Page Verification.'},
 
           ]
         },
         {
           url: '../img/clients/image00012.jpeg',
-          name: 'Sean Tizzle',
+          name: 'Cynthia Morgan',
           description: [
             {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Wikipedia Page '},
+              {descp: 'Twitter Page Verification.'},
               {descp: 'Instagram Page Verification.'},
 
           ]
         },
         {
           url: '../img/clients/image00013.jpeg',
-          name: 'Sean Tizzle',
+          name: 'African Food Network',
           description: [
             {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Wikipedia Page'},
+              {descp: 'Facebook Page Verification.'},
               {descp: 'Instagram Page Verification.'},
 
           ]
         },
         {
           url: '../img/clients/image00014.jpeg',
-          name: 'Sean Tizzle',
+          name: 'P Clothing',
           description: [
-            {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
-              {descp: 'Instagram Page Verification.'},
+            // {descp: 'Google Branding.'},
+              // {descp: 'Wikipedia Page '},
+              {descp: 'Facebook Page Verification.'},
 
           ]
         },
         {
           url: '../img/clients/image00015.png',
-          name: 'Sean Tizzle',
+          name: 'Aje Filmworks',
           description: [
             {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
-              {descp: 'Instagram Page Verification.'},
+              {descp: 'Wikipedia Page '},
 
           ]
         },
         {
           url: '../img/clients/image00016.jpeg',
-          name: 'Sean Tizzle',
+          name: 'Dj Bally',
           description: [
             {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
+              {descp: 'Wikipedia Page '},
+              {descp: 'Twitter Page Verification.'},
               {descp: 'Instagram Page Verification.'},
+              {descp: 'Facebook Page Verification.'},
 
           ]
         },
         {
           url: '../img/clients/image00017.jpeg',
-          name: 'Sean Tizzle',
+          name: 'The Sinstress',
           description: [
             {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
-              {descp: 'Instagram Page Verification.'},
-
           ]
         },
         {
           url: '../img/clients/image00018.jpeg',
-          name: 'Sean Tizzle',
+          name: 'Zoro',
           description: [
             {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page Verification.'},
-              {descp: 'Instagram Page Verification.'},
+              {descp: 'Wikipedia Page '},
 
           ]
         }
