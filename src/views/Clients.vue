@@ -209,6 +209,15 @@ export default {
               {descp: 'Twitter Page Verification '},
 
           ]
+        },
+        {
+          url: '../img/clients/image00021.jpeg',
+          name: 'Fliptyce',
+          description: [
+            // {descp: 'Google Branding.'},
+              {descp: 'Twitter Page Verification '},
+
+          ]
         }
       ],
     }
