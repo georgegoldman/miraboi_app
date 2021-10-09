@@ -191,6 +191,15 @@ export default {
               {descp: 'Wikipedia Page '},
 
           ]
+        },
+        {
+          url: '../img/clients/image00019.jpeg',
+          name: 'Small Doctor',
+          description: [
+            // {descp: 'Google Branding.'},
+              {descp: 'Twitter Page Verification '},
+
+          ]
         }
       ],
     }
