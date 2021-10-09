@@ -38,7 +38,7 @@ export default {
           name: 'Dann Visbal',
           description: [
               {descp: 'Google Branding.'},
-              {descp :'Wikipedia page.'}
+              {descp :'Wikipedia Page.'}
             ]
         },
         {
