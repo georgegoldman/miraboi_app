@@ -171,7 +171,7 @@ export default {
             {descp: 'Google Branding.'},
               {descp: 'Wikipedia Page '},
               {descp: 'Twitter Page Verification.'},
-              {descp: 'Instagram Page Verification.'},
+              // {descp: 'Instagram Page Verification.'},
               {descp: 'Facebook Page Verification.'},
 
           ]
