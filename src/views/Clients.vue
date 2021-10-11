@@ -218,6 +218,15 @@ export default {
               {descp: 'Twitter Page Verification '},
 
           ]
+        },
+        {
+          url: '../img/clients/image00022.jpeg',
+          name: 'Isoko Boy',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page'},
+
+          ]
         }
       ],
     }

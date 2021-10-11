@@ -76,6 +76,11 @@
         </md-list-item>
 
         <md-list-item>
+          <md-icon>corporate_fare</md-icon>
+          <span class="md-list-item-text"><h5 style="font-family: 'Limelight', cursive;"><router-link to="/pr_service">PR Service</router-link></h5></span>
+        </md-list-item>
+
+        <md-list-item>
           <md-icon>album</md-icon>
           <span class="md-list-item-text" style="cursor: pointer" v-on:click="redirect('https://ffm.bio/miraboi')" ><h5 style="font-family: 'Limelight', cursive;">Music Profile</h5></span>
         </md-list-item>
