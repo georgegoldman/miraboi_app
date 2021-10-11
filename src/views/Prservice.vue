@@ -57,11 +57,26 @@ export default {
                     price: '2,500'
                 },
                 {
-                    name: 'Need An Official Website.',
+                    name: 'Need An Official Website',
                     price: '1,700'
+                },
+                {
+                    name: 'Twitter Page Verification',
+                    price: '3,500'
+                },
+                {
+                    name: 'Recover Disabled Instagram Page',
+                    price: '3,500'
+                },
+                {
+                    name: 'EPK',
+                    price: '1,000'
                 },
             ]
         }
     }
 }
 </script>
+
+
+// you have to run
