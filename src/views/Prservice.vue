@@ -11,7 +11,7 @@
                         </md-card-header>
 
                         <md-card-content>
-                            {{service.price}}
+                            ${{service.price}}
                         </md-card-content>
 
                         <md-card-actions>
