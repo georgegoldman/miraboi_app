@@ -20,7 +20,9 @@
 
                     <md-card-actions>
                         <!-- <md-button>Action</md-button> -->
-                        <md-button class="text-light">Book</md-button>
+                        <md-button class="text-light">
+                            <a v-bind:href="'mailto:info@miraboi.com?subject='+service.name">Book</a>
+                        </md-button>
                     </md-card-actions>
 
                     <md-card-content>
