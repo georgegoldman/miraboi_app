@@ -28,6 +28,8 @@
 
 
 <script>
+
+// on js
 export default {
   name: 'About',
   data () {
