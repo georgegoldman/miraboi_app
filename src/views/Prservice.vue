@@ -9,9 +9,9 @@
             <div v-for="service in services" :key="service.name" >
             <div class=" col-12  my-3" >
                 <md-card class="md-primary" md-theme="orange-card" md-with-hover>
-                    <md-card-media>
+                    <!-- <md-card-media>
                         <img v-lazy="service.img">
-                    </md-card-media>
+                    </md-card-media> -->
 
                     <md-card-header>
                         <div class="md-title">{{service.name}}</div>
