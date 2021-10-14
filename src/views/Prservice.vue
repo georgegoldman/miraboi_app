@@ -72,19 +72,19 @@ export default {
                 {
                     name: 'Claim Instagram Inactive Username',
                     price: '3,500',
-                    content: "The best method to build an Instagram page is first having a brand that you come up on your own which they have to be available across all social media platforms which you can use Instagram username to check with",
+                    content: "It’s always nice having a unique username as your brand on your Instagram account but always frustrating when it’s being used by an inactive Instagram account or is currently not available but not in use by any account. This service takes within a week.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216745/MIRABOI/pr_services/claimInstagramInactiveUsername_bzkhj6.jpg",
                 },
                 {
                     name: 'Claim Facebook Unavailable Username',
                     price: '2,500',
-                    content: "It is important to know that your @username will create a custom Facebook URL which will show up in internet searches much easier. Without a @username your Facebook URL will be a bunch of numbers at the end, which isn't so easy for someone to search.",
+                    content: "Sometimes your preferred usernames are not available on Facebook for you to use on your Facebook page and this could somehow be frustrating in making you putting up a tough decision. This service takes within a week.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216913/MIRABOI/pr_services/claimInactiveFacebookUsername_f99fh1.png",
                 },
                 {
                     name: 'Need An Official Website',
                     price: '1,700',
-                    content: "Having the control over what information you would like to share (including your achievements) is such a powerful thing. website can function similarly to a resume. However, a personal website has the freedom to be much more extensive and engaging, since it allows for the inclusion of photos, work samples, and even testimonials.",
+                    content: "Having the control over what information you would like to share (including your achievements) is such a powerful thing. website can function similarly to a resume. However, a personal website has the freedom to be much more extensive and engaging, since it allows for the inclusion of photos, work samples, and even testimonials. This service takes within 9 weeks.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216558/MIRABOI/pr_services/officailwebsite_vab0gs.png",
                 },
                 {
