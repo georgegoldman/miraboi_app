@@ -87,24 +87,24 @@ export default {
                     content: "Having the control over what information you would like to share (including your achievements) is such a powerful thing. website can function similarly to a resume. However, a personal website has the freedom to be much more extensive and engaging, since it allows for the inclusion of photos, work samples, and even testimonials.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216558/MIRABOI/pr_services/officailwebsite_vab0gs.png",
                 },
-                // {
-                //     name: 'Twitter Page Verification',
-                //     price: '3,500',
-                //     content: "Having a blue tick on your Twitter account offers more credibility and helps increase trustworthiness among followers. With it, you are more likely to be taken seriously by your followers and prospective followers. Don’t we all love to hear from “credible” sources?",
-                //     // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139428/MIRABOI/pr_services/twitter-verified-accounts_qfyrgi.jpg'
-                // },
-                // {
-                //     name: 'Recover Disabled Instagram Page',
-                //     price: '3,500',
-                //     content: "Now you have your account, find out what's next. Get the complete picture with a free marketing plan or explore three key tips to hit the ground running.",
-                //     // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139425/MIRABOI/pr_services/your-account-has-been-disabled_ipoimj.jpg'
-                // },
-                // {
-                //     name: 'EPK',
-                //     price: '1,000',
-                //     content: "What is an EPK? EPK, short for electronic press kit, is a pre-packaged set of promotional materials of a person, company, or organization distributed to members of the media for promotional use. They are often distributed to announce a release or for a news conference.",
-                //     // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139429/MIRABOI/pr_services/bzblog-new-epk-templates_ku9srd.jpg'
-                // },
+                {
+                    name: 'Twitter Page Verification',
+                    price: '3,500',
+                    content: "Having a blue tick on your Twitter account offers more credibility and helps increase trustworthiness among followers. With it, you are more likely to be taken seriously by your followers and prospective followers. Don’t we all love to hear from “credible” sources?",
+                    // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139428/MIRABOI/pr_services/twitter-verified-accounts_qfyrgi.jpg'
+                },
+                {
+                    name: 'Recover Disabled Instagram Page',
+                    price: '3,500',
+                    content: "Now you have your account, find out what's next. Get the complete picture with a free marketing plan or explore three key tips to hit the ground running.",
+                    // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139425/MIRABOI/pr_services/your-account-has-been-disabled_ipoimj.jpg'
+                },
+                {
+                    name: 'EPK',
+                    price: '1,000',
+                    content: "What is an EPK? EPK, short for electronic press kit, is a pre-packaged set of promotional materials of a person, company, or organization distributed to members of the media for promotional use. They are often distributed to announce a release or for a news conference.",
+                    // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139429/MIRABOI/pr_services/bzblog-new-epk-templates_ku9srd.jpg'
+                },
             ]
         }
     }
