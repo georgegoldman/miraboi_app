@@ -84,7 +84,7 @@ export default {
                 {
                     name: 'Need An Official Website',
                     price: '1,700',
-                    content: "Having the control over what information you would like to share (including your achievements) is such a powerful thing. website can function similarly to a resume. However, a personal website has the freedom to be much more extensive and engaging, since it allows for the inclusion of photos, work samples, and even testimonials. This service takes within 9 weeks.",
+                    content: "Having the control over what information you would like to share (including your achievements) is such a powerful thing. website can function similarly to a resume. However, a personal website has the freedom to be much more extensive and engaging, since it allows for the inclusion of photos, work samples, and even testimonials. This service takes within one weeks.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216558/MIRABOI/pr_services/officailwebsite_vab0gs.png",
                 },
                 {
