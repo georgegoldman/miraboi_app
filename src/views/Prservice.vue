@@ -66,7 +66,7 @@ export default {
                 {
                     name: 'Instagram Page Verification',
                     price: '3,500',
-                    content: "Once your account is verified, you'll automatically rank at the top of relevant Instagram searches. For many people, getting the Instagram check is just a badge of honor. It looks cool, it builds your clout, and it makes you feel important.",
+                    content: "Once your account is verified, you'll automatically rank at the top of relevant Instagram searches. For many people, getting the Instagram check is a badge of honor. It looks cool, it builds your public presence and differentiate your account between fake profiles. This service takes within a week.",
                     img: 'https://res.cloudinary.com/ukony/image/upload/v1634216073/MIRABOI/pr_services/instagramverification_ihhygt.png',
                 },
                 {
