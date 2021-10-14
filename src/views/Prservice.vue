@@ -102,7 +102,7 @@ export default {
                 {
                     name: 'EPK',
                     price: '1,000',
-                    content: "What is an EPK? EPK, short for electronic press kit, is a pre-packaged set of promotional materials of a person, company, or organization distributed to members of the media for promotional use. They are often distributed to announce a release or for a news conference.",
+                    content: "EPK, short for electronic press kit, is a pre-packaged set of promotional materials of a person, company, or organization distributed to members of the media for promotional use. They are often distributed to announce a release or for a news conference.",
                     // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139429/MIRABOI/pr_services/bzblog-new-epk-templates_ku9srd.jpg'
                 },
             ]
