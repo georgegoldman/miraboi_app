@@ -47,20 +47,20 @@ export default {
                 {
                     name: 'Google Knowledge Panel',
                     price: '2,500',
-                    content: "Knowledge panels are information boxes that appear on Google when you search for entities (people, places, organizations, things) that are in the Knowledge Graph. They are meant to help you get a quick snapshot of information on a topic based on Google's understanding of available content on the web.",
+                    content: "Knowledge panels are information boxes that appear on Google when you search for entities (people, places, organizations, things) that are in the Knowledge Graph. They are meant to help you get a quick snapshot of information on a topic based on Google's understanding of available content on the web. This service takes within 2 weeks.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216270/MIRABOI/pr_services/googleKnowledgePanel_jjjgbp.png",
                 },
 
                 {
                     name: 'Wikipedia Page',
                     price: '3,500',
-                    content: "Wikipedia is a free content, multilingual online encyclopedia written and maintained by a community of volunteers through a model of open collaboration, using a wiki-based editing system. Individual contributors, also called editors, are known as Wikipedians.",
+                    content: "Wikipedia is a biographical platform where Google extract informations to design and build up your Google knowledge panel for a professional look. This service takes up to a week.",
                     img: 'https://res.cloudinary.com/ukony/image/upload/v1634146572/MIRABOI/pr_services/image00001_1_ralbrz.jpg',
                 },
                 {
                     name: 'Facebook Page Verification',
                     price: '2,500',
-                    content: "A Facebook verification checkmark provides credibility to official pages and puts a clear distinction between the real Pages and the Pages run by fans or imposters. In addition, Facebook prioritizes verified profiles and Pages in its search results.",
+                    content: "A Facebook verification checkmark provides credibility to official pages and puts a clear distinction between the real Pages and the Pages run by fans or imposters. In addition, Facebook prioritizes verified profiles and Pages in its search results. This service takes within 3 business days.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216394/MIRABOI/pr_services/facebookVerification_dheirt.png",
                 },
                 {
