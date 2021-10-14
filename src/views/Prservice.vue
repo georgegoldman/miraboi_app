@@ -54,7 +54,7 @@ export default {
                 {
                     name: 'Wikipedia Page',
                     price: '3,500',
-                    content: "Wikipedia is a biographical platform where Google extract informations to design and build up your Google knowledge panel for a professional look. This service takes up to a week.",
+                    content: "Wikipedia is a biographical platform where Google extract informations to design and build up your Google knowledge panel for a professional look. This service takes up to one week.",
                     img: 'https://res.cloudinary.com/ukony/image/upload/v1634146572/MIRABOI/pr_services/image00001_1_ralbrz.jpg',
                 },
                 {
@@ -66,25 +66,25 @@ export default {
                 {
                     name: 'Instagram Page Verification',
                     price: '3,500',
-                    content: "Once your account is verified, you'll automatically rank at the top of relevant Instagram searches. For many people, getting the Instagram check is a badge of honor. It looks cool, it builds your public presence and differentiate your account between fake profiles. This service takes within a week.",
+                    content: "Once your account is verified, you'll automatically rank at the top of relevant Instagram searches. For many people, getting the Instagram check is a badge of honor. It looks cool, it builds your public presence and differentiate your account between fake profiles. This service takes within one week.",
                     img: 'https://res.cloudinary.com/ukony/image/upload/v1634216073/MIRABOI/pr_services/instagramverification_ihhygt.png',
                 },
                 {
                     name: 'Claim Instagram Inactive Username',
                     price: '3,500',
-                    content: "It’s always nice having a unique username as your brand on your Instagram account but always frustrating when it’s being used by an inactive Instagram account or is currently not available but not in use by any account. This service takes within a week.",
+                    content: "It’s always nice having a unique username as your brand on your Instagram account but always frustrating when it’s being used by an inactive Instagram account or is currently not available but not in use by any account. This service takes within one week.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216745/MIRABOI/pr_services/claimInstagramInactiveUsername_bzkhj6.jpg",
                 },
                 {
                     name: 'Claim Facebook Unavailable Username',
                     price: '2,500',
-                    content: "Sometimes your preferred usernames are not available on Facebook for you to use on your Facebook page and this could somehow be frustrating in making you putting up a tough decision. This service takes within a week.",
+                    content: "Sometimes your preferred usernames are not available on Facebook for you to use on your Facebook page and this could somehow be frustrating in making you putting up a tough decision. This service takes within one week.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216913/MIRABOI/pr_services/claimInactiveFacebookUsername_f99fh1.png",
                 },
                 {
                     name: 'Need An Official Website',
                     price: '1,700',
-                    content: "Having the control over what information you would like to share (including your achievements) is such a powerful thing. website can function similarly to a resume. However, a personal website has the freedom to be much more extensive and engaging, since it allows for the inclusion of photos, work samples, and even testimonials. This service takes within one weeks.",
+                    content: "Having the control over what information you would like to share (including your achievements) is such a powerful thing. website can function similarly to a resume. However, a personal website has the freedom to be much more extensive and engaging, since it allows for the inclusion of photos, work samples, and even testimonials. This service takes within one week.",
                     img: "https://res.cloudinary.com/ukony/image/upload/v1634216558/MIRABOI/pr_services/officailwebsite_vab0gs.png",
                 },
                 {
