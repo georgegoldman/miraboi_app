@@ -96,13 +96,13 @@ export default {
                 {
                     name: 'Recover Disabled Instagram Page',
                     price: '3,500',
-                    content: "Now you have your account, find out what's next. Get the complete picture with a free marketing plan or explore three key tips to hit the ground running.",
+                    content: "Instagram sometimes disable users account for some reason privately best known to them and sometimes might be from reports about contents which goes against their terms of policy. This service takes within one week.",
                     // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139425/MIRABOI/pr_services/your-account-has-been-disabled_ipoimj.jpg'
                 },
                 {
                     name: 'EPK',
                     price: '1,000',
-                    content: "EPK, short for electronic press kit, is a pre-packaged set of promotional materials of a person, company, or organization distributed to members of the media for promotional use. They are often distributed to announce a release or for a news conference.",
+                    content: "EPK, short for electronic press kit, is a pre-packaged set of promotional materials of a person, company, or organization distributed to members of the media for promotional use. They are often distributed to announce a release or for a news conference. This service takes within one week",
                     // img: 'https://res.cloudinary.com/ukony/image/upload/v1634139429/MIRABOI/pr_services/bzblog-new-epk-templates_ku9srd.jpg'
                 },
             ]
