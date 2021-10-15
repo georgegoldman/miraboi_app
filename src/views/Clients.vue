@@ -229,6 +229,15 @@ export default {
               {descp: 'Wikipedia Page'},
 
           ]
+        },
+        {
+          url: 'https://res.cloudinary.com/ukony/image/upload/v1634260608/MIRABOI/clients/Rudy_Bundini_g7pwki.jpg',
+          name: 'Rudy Bundini',
+          description: [
+            {descp: 'Google Branding.'},
+              {descp: 'Wikipedia Page'},
+
+          ]
         }
       ],
     }
