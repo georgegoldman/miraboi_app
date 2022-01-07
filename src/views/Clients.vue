@@ -92,11 +92,12 @@ export default {
         },
         {
           url: '../img/clients/image00008.jpeg',
-          name: 'Kevin Eze',
+          name: 'Kelvin Eze',
           description: [
             {descp: 'Google Branding.'},
               {descp: 'Wikipedia Page.'},
-              {descp: 'Instagram Page Verification.'}
+              {descp: 'Instagram Page Verification.'},
+              {descp: 'Claim Facebook Page unavailable username'}
           ]
         },
         {
@@ -178,13 +179,13 @@ export default {
 
           ]
         },
-        {
-          url: '../img/clients/image00017.jpeg',
-          name: 'The Sinstress',
-          description: [
-            {descp: 'Google Branding.'},
-          ]
-        },
+        // {
+        //   url: '../img/clients/image00017.jpeg',
+        //   name: 'The Sinstress',
+        //   description: [
+        //     {descp: 'Google Branding.'},
+        //   ]
+        // },
         {
           url: '../img/clients/image00018.jpeg',
           name: 'Zoro',
@@ -222,23 +223,44 @@ export default {
           ]
         },
         {
-          url: '../img/clients/image00022.jpeg',
-          name: 'Isoko Boy',
+          url: '../img/clients/image00023.jpeg',
+          name: 'Guchi',
           description: [
-            {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page'},
+            // {descp: 'Google Branding.'},
+              // {descp: 'Twitter Page Verification '},
+              {descp: 'Wikipedia Page '},
 
           ]
         },
         {
-          url: 'https://res.cloudinary.com/ukony/image/upload/v1634260608/MIRABOI/clients/Rudy_Bundini_g7pwki.jpg',
-          name: 'Rudy Bundini',
+          url: '../img/clients/image00024.jpeg',
+          name: 'Mc Lively',
           description: [
-            {descp: 'Google Branding.'},
-              {descp: 'Wikipedia Page'},
+            // {descp: 'Google Branding.'},
+              // {descp: 'Twitter Page Verification '},
+              // {descp: 'Wikipedia Page '},
+              {descp: 'Instagram Page Verification.'},
 
           ]
-        }
+        },
+        // {
+        //   url: '../img/clients/image00022.jpeg',
+        //   name: 'Isoko Boy',
+        //   description: [
+        //     {descp: 'Google Branding.'},
+        //       {descp: 'Wikipedia Page'},
+
+        //   ]
+        // },
+        // {
+        //   url: 'https://res.cloudinary.com/ukony/image/upload/v1634260608/MIRABOI/clients/Rudy_Bundini_g7pwki.jpg',
+        //   name: 'Rudy Bundini',
+        //   description: [
+        //     {descp: 'Google Branding.'},
+        //       {descp: 'Wikipedia Page'},
+
+        //   ]
+        // }
       ],
     }
   }
