@@ -243,6 +243,17 @@ export default {
 
           ]
         },
+                {
+          url: '../img/clients/image00025.jpeg',
+          name: 'Sif Saga',
+          description: [
+            {descp: 'Google Branding.'},
+              // {descp: 'Twitter Page Verification '},
+              {descp: 'Wikipedia Page '},
+              // {descp: 'Instagram Page Verification.'},
+
+          ]
+        },
         // {
         //   url: '../img/clients/image00022.jpeg',
         //   name: 'Isoko Boy',
